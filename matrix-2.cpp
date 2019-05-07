@@ -43,7 +43,7 @@ void func_a(string str)
 
         if (str[n]=='['||str[n]==']'||str[n]==' '){continue;}
         if ( str[n]==';'){ matrixa.push_back(mat); mat.clear(); continue ;}
-        if(isdigit(str[n])){ temp = str.substr(n); mat.push_back(atof(temp.c_str()));}
+        if(isdigit(str[n])||str[n]=='-'){ temp = str.substr(n); mat.push_back(atof(temp.c_str()));}
 while(isdigit(str[n+1])||str[n+1]=='-'||str[n+1]=='.'){ n++;}
 	}
     matrixa.push_back(mat); mat.clear();
@@ -58,7 +58,7 @@ void func_b(string str)
 
         if (str[n]=='['||str[n]==']'||str[n]==' '){continue;}
         if ( str[n]==';'){ matrixb.push_back(mat); mat.clear(); continue ;}
-        if(isdigit(str[n])){ temp = str.substr(n); mat.push_back(atof(temp.c_str()));}
+        if(isdigit(str[n])||str[n]=='-'){ temp = str.substr(n); mat.push_back(atof(temp.c_str()));}
         while(isdigit(str[n+1])||str[n+1]=='-'||str[n+1]=='.'){ n++;}
 
 
