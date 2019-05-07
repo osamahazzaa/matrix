@@ -6,8 +6,8 @@
 
 using namespace std;
 
-vector<vector<float>>matrixa;
-vector<vector<float>>matrixb ;
+vector<vector<float> >matrixa;
+vector<vector<float> >matrixb ;
 
 int error() {
 	int flag = 0;
